@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.animoto.android.views.DraggableGridView
+        android:id="@+id/dgv"
+        android:layout_width="fill_parent"
+        android:layout_height="341dp"
+        android:layout_above="@+id/cnvrtAud"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="24dp" >
+
+    </com.animoto.android.views.DraggableGridView>
+
+    <Button
+        android:id="@+id/nxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Continue" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nxt"
+        android:layout_centerHorizontal="true"
+        android:text="Drag and ReOrder Your Images "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

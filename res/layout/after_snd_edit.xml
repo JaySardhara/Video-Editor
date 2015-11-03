@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/save_snd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/for_vid"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/for_vid"
+        android:layout_marginTop="117dp"
+        android:text="Just Save Sound" />
+
+    <TextView
+        android:id="@+id/after_snd_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/save_snd"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:layout_marginTop="40dp"
+        android:text="What you want to do with selected Sound ?"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/for_vid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save_snd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="122dp"
+        android:text="Paste On Other Video" />
+
+</RelativeLayout>

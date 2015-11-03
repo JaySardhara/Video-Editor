@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <VideoView
+        android:id="@+id/vsedit_videoview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    
+    <com.soundedit.pkg.WaveformView
+        android:id="@+id/vsedit_waveform"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    
+    <FrameLayout
+        android:id="@+id/vsedit_rngskbr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"        
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/vsedit_waveform"
+        android:layout_marginTop="5dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Select Audio you want to replace"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/vsedit_prvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/vsedit_rngskbr"
+        android:layout_marginTop="18dp"
+        android:text="Preview" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/vsedit_prvw"
+        android:layout_alignBottom="@+id/vsedit_prvw"
+        android:layout_alignRight="@+id/textView1"
+        android:text="Next >>" />
+    
+</RelativeLayout>

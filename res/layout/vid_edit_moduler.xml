@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/initiateSE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="Merge 2 videos" />
+
+    <Button
+        android:id="@+id/initiateVM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/initiateSE"
+        android:layout_below="@+id/initiateSE"
+        android:layout_marginTop="42dp"
+        android:text="Merge 3 videos" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/initiateVM"
+        android:layout_below="@+id/initiateVM"
+        android:layout_marginTop="46dp"
+        android:text="Button" />
+
+</RelativeLayout>

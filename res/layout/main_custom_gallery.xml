@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<Button android:id="@+id/selectBtn"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="Select" android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:minWidth="200px" />
+	<GridView android:id="@+id/PhoneImageGrid"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:numColumns="auto_fit" android:verticalSpacing="10dp"
+		android:horizontalSpacing="10dp" android:columnWidth="90dp"
+		android:stretchMode="columnWidth" android:gravity="center"
+		android:layout_above="@id/selectBtn" />
+</RelativeLayout>

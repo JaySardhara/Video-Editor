@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.videomixer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        
+        <activity android:name="com.welcome.pkg.Base" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.video.pkg.Slide_Engine" android:label="@string/app_name"></activity>
+        <activity android:name="com.video.pkg.VidSndEdit_Engine" android:label="@string/app_name"></activity>
+        <activity android:name="com.video.pkg.Vid_SndEdit" android:label="@string/app_name"></activity>
+        <activity android:name="com.video.pkg.VidMerge_Engine" android:label="@string/app_name"></activity>
+        <activity android:name="com.video.pkg.VidMerge_SngAdd" android:label="@string/app_name"></activity>        
+        <activity android:name="com.soundedit.pkg.Aud_Convert" android:label="@string/app_name"></activity>        
+        <activity android:name="com.video.pkg.VidConvert_Engine" android:label="@string/app_name"></activity>        
+        <activity android:name="com.video.pkg.Vid_Convert" android:label="@string/app_name"></activity>        
+        <activity android:name="com.video.pkg.Custom_Draggable_Gridview" android:label="@string/app_name"></activity>        
+        <activity android:name="com.video.pkg.CustomGallery_Pics" android:label="@string/app_name"></activity>
+        <activity android:name="com.video.pkg.VidRotate_Engine" android:label="@string/app_name"></activity>
+        <activity android:name="com.welcome.pkg.Gallery_Intiator" android:label="@string/app_name"></activity>
+        <activity android:name="com.video.pkg.Vid_Rotater" android:label="@string/app_name"></activity>
+        <activity android:name="com.video.pkg.Welcome" android:label="@string/app_name"></activity>
+        <activity android:name="com.video.pkg.vid_arranger" android:label="@string/app_name" android:screenOrientation="landscape" ></activity>
+        <activity android:name="com.video.pkg.CustomGallery_VidMerge" android:label="@string/app_name"></activity>
+        <activity android:name="com.video.pkg.VMixer" android:label="@string/app_name" android:screenOrientation="landscape" ></activity>
+        <activity android:name="com.video.pkg.MergeSelector" android:label="@string/app_name"></activity>
+        <activity android:name="com.soundedit.pkg.AudioScrapper" android:label="@string/app_name"></activity>
+        <activity android:name="com.soundedit.pkg.Combiner" android:label="@string/app_name"></activity>
+        <activity android:name="com.soundedit.pkg.Editor" android:label="@string/app_name"></activity>
+        <activity android:name="com.soundedit.pkg.Aud_Vid_Merger" android:label="@string/app_name"></activity>
+        <activity android:name="com.soundedit.pkg.Initiator" android:label="@string/app_name"></activity>
+        <activity android:name="com.soundedit.pkg.After_edit_snd" android:label="@string/app_name"></activity>
+        
+    </application>
+
+</manifest>

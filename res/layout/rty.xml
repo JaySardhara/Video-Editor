@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    tools:context=".Scope" >
+    
+   
+        
+        <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />   
+        
+        
+        
+    
+    
+    
+
+    <com.soundedit.pkg.WaveformView
+        android:id="@+id/waveform"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/videoView1"
+        android:layout_marginTop="22dp" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <FrameLayout
+        android:id="@+id/rngskbr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/waveform"
+        android:layout_marginTop="5dp" 
+        android:layout_marginBottom="150dp" >
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/reEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/audExtrctBtn"
+        android:layout_alignBottom="@+id/audExtrctBtn"
+        android:layout_alignLeft="@+id/waveform"
+        android:layout_alignRight="@+id/audExtrctBtn"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="112dp"
+        android:text="ReEdit" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/audExtrctBtn"
+        android:layout_alignBottom="@+id/audExtrctBtn"
+        android:layout_alignLeft="@+id/audExtrctBtn"
+        android:layout_alignRight="@+id/waveform"
+        android:layout_marginLeft="123dp"
+        android:layout_marginRight="36dp"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/previewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/audExtrctBtn"
+        android:layout_alignLeft="@+id/waveform"
+        android:layout_alignTop="@+id/audExtrctBtn"
+        android:layout_marginRight="49dp"
+        android:layout_toLeftOf="@+id/home"
+        android:text="Preview Selected" />
+
+    <Button
+        android:id="@+id/audExtrctBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/waveform"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/waveform"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="161dp"
+        android:text="Extract Selected Audio" />
+    
+</RelativeLayout>

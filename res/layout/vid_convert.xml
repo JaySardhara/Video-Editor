@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <RelativeLayout
+        android:id="@+id/child"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="24dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/vidSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:text="Video:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/profiler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/textView1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/profileSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profiler"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/textView3" 
+        android:prompt="@+id/audFormatSpinner"/>
+
+    <Spinner
+        android:id="@+id/formatSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profileSpinner"
+        android:layout_alignRight="@+id/profileSpinner"
+        android:layout_alignTop="@+id/textView4"
+        android:prompt="@+id/audBitrateSpinner" />
+
+    <TextView
+        android:id="@+id/saveAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/formatSpinner"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vidSelected"
+        android:layout_below="@+id/vidSelected"
+        android:layout_marginTop="28dp"
+        android:text="Profile:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <FrameLayout
+        android:id="@+id/vidBifercator"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="26dp" >
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Video Settings"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/profileSpinner"
+        android:layout_marginTop="23dp"
+        android:text="Convert to:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/formatSpinner"
+        android:layout_marginTop="22dp"
+        android:text="Save As:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/vidBifercator"
+        android:layout_marginTop="27dp"
+        android:text="Resolution:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <Spinner
+         android:id="@+id/resSpinner"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/saveAs"
+         android:layout_alignRight="@+id/fpsSpinner"
+         android:layout_alignTop="@+id/textView6"
+         android:prompt="@+id/audSamplerSpinner" />
+     
+     <TextView
+         android:id="@+id/textView7"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView6"
+         android:layout_below="@+id/resSpinner"
+         android:layout_marginTop="27dp"
+         android:text="FPS:"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <EditText
+         android:id="@+id/fileName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/saveAs"
+         android:layout_alignRight="@+id/formatSpinner"
+         android:layout_alignTop="@+id/textView5"
+         android:ems="10"
+         android:hint="File Name" />
+
+     <TextView
+         android:id="@+id/textView9"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView7"
+         android:layout_below="@+id/audBifercator"
+         android:layout_marginTop="27dp"
+         android:text="Bitrate:"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <Spinner
+         android:id="@+id/fpsSpinner"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/fileName"
+         android:layout_alignRight="@+id/fileName"
+         android:layout_alignTop="@+id/textView7"
+         android:prompt="@+id/spinner4" />
+
+     <FrameLayout
+         android:id="@+id/audBifercator"
+         android:layout_width="match_parent"
+         android:layout_height="25dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/fpsSpinner" >
+
+         <TextView
+             android:id="@+id/textView8"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:text="Audio Settings"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+     </FrameLayout>
+
+     <Spinner
+         android:id="@+id/bitrateSpinner"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/fpsSpinner"
+         android:layout_alignRight="@+id/fpsSpinner"
+         android:layout_alignTop="@+id/textView9"
+         android:prompt="@+id/spinner5" />
+
+     <Spinner
+         android:id="@+id/channelSpinner"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/bitrateSpinner"
+         android:layout_alignRight="@+id/bitrateSpinner"
+         android:layout_alignTop="@+id/textView10"
+         android:prompt="@+id/spinner6" />
+
+     <FrameLayout
+         android:id="@+id/convertBifercator"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/channelSpinner" >
+
+         <Button
+             android:id="@+id/convertion"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:text="Convert" />         
+
+     </FrameLayout>
+
+     <TextView
+         android:id="@+id/textView10"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView9"
+         android:layout_below="@+id/bitrateSpinner"
+         android:layout_marginTop="22dp"
+         android:text="Channels:"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+</RelativeLayout>
+    
+</ScrollView>
+
+

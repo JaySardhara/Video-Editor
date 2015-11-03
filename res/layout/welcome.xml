@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/initiateSE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="Edit Sound in Videos" />
+
+    <Button
+        android:id="@+id/initiateVM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/initiateSE"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/initiateSE"
+        android:layout_marginBottom="142dp"
+        android:text="Merge Videos" />
+
+</RelativeLayout>
