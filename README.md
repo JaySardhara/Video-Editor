@@ -1,6 +1,6 @@
 # Video-Editor
 
-Video Editor for Android based on FMPEG engine
+Video Editor for Android based on FFMPEG engine
 
 Android application for video editing
 
