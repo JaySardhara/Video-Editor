@@ -16,3 +16,5 @@ FFMPEG engine is used at the core to perform my functions.
 I would be uploading screenshots in short time.
 
 My first Commit.. So any suggestions are  welcome
+
+[hi !](https://github.com/JaySardhara/Video-Editor/blob/master/shots/Screenshot_2014-03-25-18-58-57.png)
